@@ -14,8 +14,8 @@ formLevel.addEventListener('submit', (event) => {
 	}
 
 	const formData = {
-		email: email.value,
-		password: password.value
+		[email.name]: email.value,
+		[password.name]: password.value
 	};
 	console.log(formData);
 
